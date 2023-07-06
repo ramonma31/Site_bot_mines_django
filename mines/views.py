@@ -1,11 +1,11 @@
-from django.shortcuts import HttpResponse, render
+from django.shortcuts import render
 
 
 # Create your views here.
 def home(request):
-    return HttpResponse('init in site')
+    return render(request, 'mines/home.html')
 
 
 def mines_render(requests):
-    return HttpResponse('init in mines')
+    return render(requests, 'mines.html')
 
